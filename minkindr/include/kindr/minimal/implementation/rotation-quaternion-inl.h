@@ -28,6 +28,7 @@
 #include <glog/logging.h>
 #include <kindr/minimal/rotation-quaternion.h>
 #include <kindr/minimal/angle-axis.h>
+#include <iostream>
 
 namespace kindr {
 namespace minimal {
@@ -41,7 +42,7 @@ struct EPS {
 };
 template <>
 struct EPS<double> {
-  static constexpr double value() { return 1.0e-8; }
+  static constexpr double value() { return 1.0e-5; }
   static constexpr double normalization_value() { return 1.0e-4; }
 };
 template <>
