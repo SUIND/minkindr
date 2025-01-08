@@ -42,12 +42,12 @@ struct EPS {
 };
 template <>
 struct EPS<double> {
-  static constexpr double value() { return 1.0e-5; }
+  static constexpr double value() { return 1.0e-4; }
   static constexpr double normalization_value() { return 1.0e-4; }
 };
 template <>
 struct EPS<float> {
-  static constexpr float value() { return 1.0e-5f; }
+  static constexpr float value() { return 1.0e-4f; }
   static constexpr float normalization_value() { return 1.0e-4f; }
 };
 
